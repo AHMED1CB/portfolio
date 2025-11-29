@@ -5,13 +5,13 @@ import About from "./components/About/About";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import themes from "../App/Theme";
 import { useState } from "react";
-import { ThemeContext } from "@emotion/react";
+import ThemeContext from "../App/contexts/ThemeContext";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme ?? "light");
 
   return (
-    <ThemeContext.Provider value={(theme, setTheme)}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <ThemeProvider theme={themes[theme]}>
         <CssBaseline />
         <Routes>

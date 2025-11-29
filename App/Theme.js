@@ -2,9 +2,16 @@ import { createTheme } from "@mui/material/styles";
 
 
 const dark = createTheme({
+    shadows: [
+        'none',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        ...Array(20).fill(''),
+    ],
     palette: {
         mode: "dark",
-
         primary: {
             main: "#6366F1",
         },
@@ -49,6 +56,14 @@ const dark = createTheme({
 });
 
 const light = createTheme({
+    shadows: [
+        'none',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        '0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24)',
+        ...Array(20).fill(''),
+    ],
     palette: {
         mode: "light",
 
@@ -79,6 +94,7 @@ const light = createTheme({
                     "--color-text": "#1e293b",
                     "--color-muted-bg": "#f1f5f9",
 
+
                     "--color-primary-hsl": "239, 84%, 67%",
                     "--color-secondary-hsl": "262, 83%, 66%",
                     "--color-accent-hsl": "189, 94%, 43%",
@@ -89,6 +105,6 @@ const light = createTheme({
     },
 });
 
-const themes = {light , dark}
+const themes = { light, dark }
 
 export default themes;
