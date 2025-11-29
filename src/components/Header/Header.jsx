@@ -16,6 +16,7 @@ import {
 import { useContext } from "react";
 import ThemeContext from "../../../App/contexts/ThemeContext";
 import { useLocation, useNavigate } from "react-router-dom";
+import "./header.css";
 export default () => {
   const navigationLinks = [
     {

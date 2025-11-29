@@ -45,6 +45,8 @@ const dark = createTheme({
                     "--color-bg": "#0F172A",
                     "--color-text": "#F8FAFC",
                     "--color-muted-bg": "#1E293B",
+                    "--text-muted-foreground": "#94A3B8 ",
+                    "--color-overlay": "rgba(0, 0, 0, 80%)",
 
                     "--color-primary-hsl": "239, 84%, 67%",
                     "--color-secondary-hsl": "262, 83%, 66%",
@@ -89,11 +91,12 @@ const light = createTheme({
                     "--color-primary": "#6366f1",
                     "--color-secondary": "#8b5cf6",
                     "--color-accent": "#06b6d4",
+                    "--color-overlay": "rgba(255, 255, 255, 80%)",
 
                     "--color-bg": "#ffffff",
                     "--color-text": "#1e293b",
                     "--color-muted-bg": "#f1f5f9",
-
+                    "--text-muted-foreground": "#64748B",
 
                     "--color-primary-hsl": "239, 84%, 67%",
                     "--color-secondary-hsl": "262, 83%, 66%",
