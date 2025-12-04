@@ -6,6 +6,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import themes from "../App/Theme";
 import { useState } from "react";
 import ThemeContext from "../App/contexts/ThemeContext";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme ?? "light");
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<About />} />
+            <Route path="projects" element={<Projects/>} />
           </Route>
         </Routes>
       </ThemeProvider>

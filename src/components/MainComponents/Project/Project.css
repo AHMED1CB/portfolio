@@ -1,0 +1,140 @@
+.project {
+  padding-bottom: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  height: fit-content !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--color-bg) 30%, transparent) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+}
+
+.project .project-head {
+  width: 100% !important;
+  height: 50% !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.project-body,
+.project-footer {
+  width: 90% !important;
+  margin-top: 12px !important;
+}
+
+.project-category {
+  display: flex !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  gap: 12px !important;
+  align-items: center !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  z-index: 9 !important;
+  top: 20px !important;
+  left: 20px !important;
+  backdrop-filter: blur(6px) !important;
+  background: color-mix(in srgb, var(--color-bg) 40%, transparent) !important;
+  border-radius: 8px !important;
+  background-color: var(--text-muted-foreground);
+  padding: 8px;
+  color: var(--color-text);
+}
+
+.project-image {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  border-radius: 0 !important;
+  transition: transform 0.4s ease !important;
+  object-fit: cover;
+}
+
+.project:hover .project-image {
+  transform: scale(1.1) !important;
+}
+
+.project-title {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  font-family: JetBrainsMono !important;
+  margin-bottom: 12px !important;
+  transition: 0.2s;
+}
+
+.project:hover .project-title {
+  color: var(--color-primary);
+}
+
+.project-info {
+  color: var(--text-muted-foreground) !important;
+  line-height: 1.8 !important;
+  display: block !important;
+  opacity: 0.9 !important;
+}
+
+.project-tags {
+  width: 100% !important;
+  display: flex !important;
+  gap: 12px !important;
+}
+.project-tags > .project-tag {
+  font-weight: bold !important;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: 12px !important;
+  padding: 4px 14px !important;
+  background: color-mix(
+    in srgb,
+    var(--color-primary) 15%,
+    transparent
+  ) !important;
+  backdrop-filter: blur(6px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(6px) saturate(140%) !important;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease !important;
+  box-shadow: 0 2px 6px
+    color-mix(in srgb, var(--color-primary) 10%, transparent) !important;
+}
+
+.project:hover .actions {
+  opacity: 1;
+}
+.project-tags > .project-tag:hover {
+  transform: translateY(-2px) scale(1.05) !important;
+  background: color-mix(
+    in srgb,
+    var(--color-primary) 25%,
+    transparent
+  ) !important;
+  box-shadow: 0 4px 12px
+    color-mix(in srgb, var(--color-primary) 20%, transparent) !important;
+}
+
+.project .actions {
+  transition: 0.4s;
+  opacity: 0;
+  position: absolute;
+  z-index: 8 !important;
+  background-color: var(--color-overlay);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  inset: 00;
+}
+
+.project .actions button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

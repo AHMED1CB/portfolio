@@ -1,0 +1,18 @@
+.projects-page , .projects-page .contents{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+
+
+.projects-page .contents .projects{
+    width: 100%;
+    height:fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+    gap: 12px;
+    margin-top: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+

@@ -1,0 +1,19 @@
+.heading {
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px;
+}
+
+.heading .heading-title {
+  margin-bottom: 12px;
+  font-family: "JetBrainsMono";
+  font-weight: bold;
+  font-size: 44px;
+  text-align: center;
+}
+
+
+.heading .heading-info{
+    font-size: 16px;
+    color: var(--text-muted-foreground);
+}

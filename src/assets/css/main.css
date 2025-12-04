@@ -5,12 +5,19 @@
   transition: 0.3s background-color;
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../fonts/jetbrains.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Inter";
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background-color: var(--color-bg);
+  background-color: var(--color-muted-bg) !important;
   color: var(--color-text);
 }
 
@@ -33,4 +40,3 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-

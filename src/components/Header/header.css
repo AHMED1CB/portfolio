@@ -5,6 +5,7 @@
   height: 60px;
   position: sticky;
   inset: 0;
+  background-color: var(--color-bg) !important;
 }
 
 .header > .HeaderContainer {
