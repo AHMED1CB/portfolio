@@ -17,9 +17,9 @@ const Projects = () => {
       icon: <Language />,
       category: "Web App",
       image: "../../src/assets/images/project-3.png",
-      title: "youtube-clone-client",
-      info: "YouTube Clone built using ReactJs, Material-UI, and Redux.",
-      tags: ["react", "javascript", "redux", "web", "clone"],
+      title: "Codelink",
+      info: "A Social Media App Using Php , js And Mysql",
+      tags: ["php", "javascript", "mysql", "css", "sql"],
     },
     {
       icon: <Language />,
@@ -36,6 +36,7 @@ const Projects = () => {
       title: "Linko",
       info: "Real-time chat application built with React, Node.js, and MongoDB.",
       tags: ["react", "nodejs", "mongodb", "web", "chat"],
+      externalLink: "https://linko-k9bk.onrender.com",
     },
   ];
 
@@ -59,6 +60,7 @@ const Projects = () => {
                 tags={project.tags}
                 image={project.image}
                 category={project.category}
+                externalLink={project.externalLink ?? ''}
               />
             );
           })}

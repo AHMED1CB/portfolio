@@ -2,16 +2,36 @@ import { Avatar, Box, Button, IconButton, Typography } from "@mui/material";
 import "./Project.css";
 import { GitHub, OpenInNew } from "@mui/icons-material";
 
-const Project = ({ icon, category, image, title, info, tags }) => {
+const Project = ({
+  icon,
+  category,
+  image,
+  title,
+  info,
+  tags,
+  externalLink = "",
+}) => {
+  const openRepo = () => {
+    let link = `https://github.com/AHMED1CB/${title}`;
+
+    window.open(link, "_blank", "noopener");
+  };
+
+  const openLink = () => {
+    if (externalLink) {
+      window.open(externalLink, "_blank", "noopener");
+    }
+  };
   return (
     <Box className="project">
       <Box className="project-head">
         <Box className="actions">
-          <IconButton className="open-external">
-            <OpenInNew />
-          </IconButton>
-
-          <IconButton className="open-external">
+          {externalLink.trim() && (
+            <IconButton className="open-external" onClick={openLink}>
+              <OpenInNew />
+            </IconButton>
+          )}
+          <IconButton className="open-external" onClick={openRepo}>
             <GitHub />
           </IconButton>
         </Box>
@@ -19,12 +39,9 @@ const Project = ({ icon, category, image, title, info, tags }) => {
           {icon} {category}
         </Box>
         <Avatar src={image} className="project-image" />
-
-        
       </Box>
 
       <Box className="project-body">
-        
         <Typography variant="h3" className="project-title">
           {title}
         </Typography>
