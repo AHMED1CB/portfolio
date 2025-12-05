@@ -12,8 +12,11 @@
   text-align: center;
 }
 
-
-.heading .heading-info{
-    font-size: 16px;
-    color: var(--text-muted-foreground);
+.heading .heading-info {
+  font-size: 16px;
+  color: var(--text-muted-foreground);
+  width: 80% !important;
+  text-align: center;
+  display: block;
+  margin: auto;
 }

@@ -1,0 +1,40 @@
+
+.skills-page .contents > div .progress-items .item {
+  padding: 6px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.skills-page .contents > div .progress-items .item::after {
+  content: attr(data-progress);
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 10px;
+  top: 0px;
+  font-weight: bold;
+  color: var(--text-muted-foreground);
+}
+
+.skills-page .contents > div .progress-items .item .progress-item-name {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "JetBrainsMono";
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.skills-page .contents > div .progress-items .item .progress-bar {
+  height: 6px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.skills-page .contents > div .progress-items .item .progress-bar span {
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}

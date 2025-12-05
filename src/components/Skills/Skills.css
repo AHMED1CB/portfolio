@@ -1,0 +1,37 @@
+.skills-page {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+}
+
+.skills-page .contents {
+  width: 100%;
+  height: fit-content;
+  margin-top: 60px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skills-page .contents > div {
+  padding: 12px;
+  flex-grow: 1;
+}
+
+.skills-page .contents > div .progress-title {
+  font-size: 22px;
+  font-family: "JetBrainsMono";
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--text-muted-foreground) !important;
+  padding-bottom: 12px;
+}
+
+.skills-page .contents > div .progress-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

@@ -7,7 +7,7 @@ const Heading = ({ heading, text }) => {
       <Typography variant="h2" className={"heading-title"}>
         {heading}
       </Typography>
-      <Typography variant="span" className={"heading-info"}>
+      <Typography component="span" className={"heading-info"}>
         {text}
       </Typography>
     </Box>

@@ -55,7 +55,7 @@ const Project = ({
         <Box className="project-tags">
           {tags.map((tag) => {
             return (
-              <Typography key={tag} variant="span" className="project-tag">
+              <Typography key={tag} component="span" className="project-tag">
                 {tag}
               </Typography>
             );

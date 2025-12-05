@@ -4,6 +4,10 @@
     padding: 12px;
 }
 
+.projects-page .contents{
+    padding: 60px;
+    margin-top: 60px;
+}
 
 .projects-page .contents .projects{
     width: 100%;
@@ -11,8 +15,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
     gap: 12px;
-    margin-top: 12px;
-    padding-left: 60px;
-    padding-right: 60px;
+   
 }
 

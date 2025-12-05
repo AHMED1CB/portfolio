@@ -7,6 +7,7 @@ import themes from "../App/Theme";
 import { useState } from "react";
 import ThemeContext from "../App/contexts/ThemeContext";
 import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme ?? "light");
@@ -18,7 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<About />} />
-            <Route path="projects" element={<Projects/>} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
           </Route>
         </Routes>
       </ThemeProvider>
