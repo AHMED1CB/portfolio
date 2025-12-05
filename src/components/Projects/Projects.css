@@ -4,14 +4,11 @@
     padding: 12px;
 }
 
-.projects-page .contents{
-    padding: 60px;
-    margin-top: 60px;
-}
 
 .projects-page .contents .projects{
     width: 100%;
     height:fit-content;
+    padding: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
     gap: 12px;
