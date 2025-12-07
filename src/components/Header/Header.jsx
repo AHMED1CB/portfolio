@@ -13,10 +13,13 @@ import {
   IconButton,
   Toolbar,
 } from "@mui/material";
+
 import { useContext } from "react";
 import ThemeContext from "../../../App/contexts/ThemeContext";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
+
+import HeadLogo from "../../assets/images/head-logo.svg";
 export default () => {
   const navigationLinks = [
     {
@@ -50,7 +53,7 @@ export default () => {
     <AppBar position="static" className="header">
       <Container className="HeaderContainer">
         <Box className="logo">
-          <Avatar src="src\assets\images\head-logo.svg" alt="Logo" />
+          <Avatar src={HeadLogo} alt="Logo" />
           <span className="text">Ahmed Hassan</span>
         </Box>
 

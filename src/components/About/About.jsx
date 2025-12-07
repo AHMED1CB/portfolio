@@ -3,6 +3,7 @@ import { GitHub, Instagram, ArrowForward, ViewInAr } from "@mui/icons-material";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./about.css";
+import { useNavigate } from "react-router-dom";
 
 export default () => {
   const tagRef = useRef(null);
@@ -101,6 +102,8 @@ export default () => {
     return () => ctx.revert();
   }, []);
 
+  const go = useNavigate();
+
   return (
     <Box className="about-page">
       <Box className="contents">
@@ -126,10 +129,16 @@ export default () => {
         </Typography>
 
         <Box ref={buttonsRef} className="buttons">
-          <Button className="btn-projects" endIcon={<ArrowForward />}>
+          <Button
+            className="btn-projects"
+            onClick={() => go("/projects")}
+            endIcon={<ArrowForward />}
+          >
             View Projects
           </Button>
-          <Button className="btn-contact">Contact Me</Button>
+          <Button className="btn-contact" onClick={() => go("/contact")}>
+            Contact Me
+          </Button>
         </Box>
 
         <Box ref={socialsRef} className="social-links">
