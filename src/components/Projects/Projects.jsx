@@ -65,7 +65,7 @@ const Projects = () => {
           opacity: 1,
           y: 0,
           duration: 1,
-          ease: "power3.out",
+          ease: "power2.out",
           scrollTrigger: {
             trigger: headingRef.current,
             start: "top 80%",
@@ -90,7 +90,7 @@ const Projects = () => {
           scale: 1,
           duration: 0.8,
           stagger: 0.15,
-          ease: "power3.out",
+          ease: "power2.out",
           scrollTrigger: {
             trigger: projectsRef.current,
             start: "top 75%",

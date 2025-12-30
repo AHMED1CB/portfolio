@@ -14,6 +14,8 @@ export default () => {
   const buttonsRef = useRef(null);
   const socialsRef = useRef(null);
 
+  const containerRef = useRef(null);
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
@@ -102,11 +104,30 @@ export default () => {
     return () => ctx.revert();
   }, []);
 
+  // Effects
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    for (let i = 0; i < 80; i++) {
+      const particle = document.createElement("div");
+      particle.className = "particle";
+      particle.style.left = Math.random() * 100 + "%";
+      particle.style.top = Math.random() * 100 + "%";
+      container.appendChild(particle);
+    }
+
+    return () => {
+      const particles = container.querySelectorAll(".particle");
+      particles.forEach((p) => p.remove());
+    };
+  }, []);
+
   const go = useNavigate();
 
   return (
     <Box className="about-page">
-      <Box className="contents">
+      <Box className="contents" ref={containerRef}>
         <span ref={tagRef} className="tag-hire">
           Available for Hire
         </span>

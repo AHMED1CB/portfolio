@@ -36,23 +36,19 @@ const Project = ({
       const actions = actionsRef.current;
       const tags = tagsRef.current?.children;
 
-      
       project.addEventListener("mouseenter", () => {
-        
         gsap.to(project, {
           y: -8,
           duration: 0.3,
           ease: "power2.out",
         });
 
-        
         gsap.to(img, {
           scale: 1.1,
           duration: 0.4,
           ease: "power2.out",
         });
 
-        
         gsap.to(actions.children, {
           opacity: 1,
           y: 0,
@@ -62,7 +58,6 @@ const Project = ({
           ease: "back.out(1.7)",
         });
 
-        
         if (tags) {
           gsap.to(tags, {
             y: -3,
@@ -74,21 +69,18 @@ const Project = ({
       });
 
       project.addEventListener("mouseleave", () => {
-        
         gsap.to(project, {
           y: 0,
           duration: 0.3,
           ease: "power2.out",
         });
 
-        
         gsap.to(img, {
           scale: 1,
           duration: 0.4,
           ease: "power2.out",
         });
 
-        
         gsap.to(actions.children, {
           opacity: 0,
           y: -10,
@@ -97,7 +89,6 @@ const Project = ({
           ease: "power2.in",
         });
 
-        
         if (tags) {
           gsap.to(tags, {
             y: 0,
@@ -107,7 +98,6 @@ const Project = ({
         }
       });
 
-      
       const buttons = actions.querySelectorAll("button");
       buttons.forEach((btn) => {
         btn.addEventListener("mouseenter", () => {
@@ -129,12 +119,7 @@ const Project = ({
         });
       });
 
-      
-      gsap.set(actions.children, {
-        opacity: 0,
-        y: -10,
-        scale: 0.8,
-      });
+      gsap.set([project, img, tags?.children], { y: 0, scale: 1 });
     });
 
     return () => ctx.revert();
@@ -156,6 +141,7 @@ const Project = ({
         <Box className="project-category">
           {icon} {category}
         </Box>
+
         <Avatar ref={imageRef} src={image} className="project-image" />
       </Box>
 
