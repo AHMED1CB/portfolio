@@ -128,9 +128,9 @@ export default () => {
   return (
     <Box className="about-page">
       <Box className="contents" ref={containerRef}>
-        <span ref={tagRef} className="tag-hire">
+        {/* <span ref={tagRef} className="tag-hire">
           Available for Hire
-        </span>
+        </span> */}
 
         <Box className="heading-text">
           <Typography ref={heading1Ref} variant="h2">

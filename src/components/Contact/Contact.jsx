@@ -22,7 +22,6 @@ const Contact = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      
       gsap.fromTo(
         headingRef.current,
         { opacity: 0, y: 50 },
@@ -39,7 +38,6 @@ const Contact = () => {
         }
       );
 
-      
       gsap.fromTo(
         emailBoxRef.current,
         { opacity: 0, x: -100, rotateY: -15 },
@@ -57,7 +55,6 @@ const Contact = () => {
         }
       );
 
-      
       gsap.fromTo(
         locationBoxRef.current,
         { opacity: 0, x: -100, rotateY: -15 },
@@ -76,7 +73,6 @@ const Contact = () => {
         }
       );
 
-      
       gsap.fromTo(
         socialHeadingRef.current,
         { opacity: 0, scale: 0.8 },
@@ -93,7 +89,6 @@ const Contact = () => {
         }
       );
 
-      
       const buttons = socialLinksRef.current.querySelectorAll("button");
       gsap.fromTo(
         buttons,
@@ -113,7 +108,6 @@ const Contact = () => {
         }
       );
 
-      
       const infoBoxes = [emailBoxRef.current, locationBoxRef.current];
       infoBoxes.forEach((box) => {
         box.addEventListener("mouseenter", () => {
@@ -147,7 +141,6 @@ const Contact = () => {
         });
       });
 
-      
       buttons.forEach((btn) => {
         btn.addEventListener("mouseenter", () => {
           gsap.to(btn, {
@@ -176,7 +169,6 @@ const Contact = () => {
         });
       });
 
-      
       gsap.to(emailBoxRef.current.querySelector(".icon"), {
         y: -8,
         duration: 2,
@@ -221,7 +213,7 @@ const Contact = () => {
               </Typography>
 
               <Typography component={"span"} className="info-data">
-                contact@example.com
+                ah8438263@gmail.com
               </Typography>
             </Box>
           </Box>
@@ -237,10 +229,10 @@ const Contact = () => {
               <Typography component={"p"} className="info-desc">
                 Based in Riyadh , SA
               </Typography>
-
+              {/* 
               <Typography component={"span"} className="info-data">
                 Available for remote work worldwide
-              </Typography>
+              </Typography> */}
             </Box>
           </Box>
         </Box>
