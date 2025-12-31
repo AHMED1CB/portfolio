@@ -14,7 +14,7 @@
 
 .project .project-head {
   width: 100% !important;
-  height: 50% !important;
+  aspect-ratio: 16 / 9;
   position: relative !important;
   overflow: hidden !important;
 }

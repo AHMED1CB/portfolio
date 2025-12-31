@@ -1,5 +1,5 @@
 export default function Particles() {
-  const flakes = Array.from({ length: 50 });
+  const flakes = Array.from({ length: 30 });
 
   return (
     <div className="snow-wrapper">
