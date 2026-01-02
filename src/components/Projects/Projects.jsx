@@ -26,7 +26,7 @@ const Projects = () => {
       image: project0Img,
       title: "bookstore",
       info: "Online Book Store built with PHP and MySQL.",
-      tags: ["php", "mysql", "web", "bookstore"],
+      tags: ["php", "mysql", "web"],
     },
     {
       icon: <Language />,
@@ -34,7 +34,7 @@ const Projects = () => {
       image: project3Img,
       title: "Codelink",
       info: "A Social Media App Using Php , js And Mysql",
-      tags: ["php", "javascript", "mysql", "css", "sql"],
+      tags: ["php", "javascript", "mysql"],
     },
     {
       icon: <Language />,
@@ -42,7 +42,7 @@ const Projects = () => {
       image: project1Img,
       title: "codeQuery",
       info: "Q&A platform for developers with voting and badges.",
-      tags: ["php", "twig", "web", "qa", "forum"],
+      tags: ["php",  "web", "qa", "forum"],
     },
     {
       icon: <Language />,
@@ -50,7 +50,7 @@ const Projects = () => {
       image: project2Img,
       title: "Linko",
       info: "Real-time chat application built with React, Node.js, and MongoDB.",
-      tags: ["react", "nodejs", "mongodb", "web", "chat"],
+      tags: ["react", "nodejs", "mongodb"],
       externalLink: "https://linko-k9bk.onrender.com",
     },
   ];
